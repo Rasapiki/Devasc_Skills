@@ -1,0 +1,21 @@
+---
+- name: ios_status
+  hosts: CSR1kv
+  gather_facts: false
+  connection: local
+  
+  tasks:
+    - name: run multiple commands on remote nodes
+      ios_command:
+        commands:
+        - show version
+        - show interfaces
+
+    - name: run commands that require answering a prompt
+      ios_command:
+        commands:
+        - command: 'clear counters GigabitEthernet1'
+          prompt: '[confirm]'
+          answer: 'y'
+        
+ 

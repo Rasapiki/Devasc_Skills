@@ -1,0 +1,15 @@
+devasc@labvm:~/labs/devnet-src/Devasc_Skills$ ansible-playbook ios_status1.yaml
+
+PLAY [ios_status] *************************************************************************************
+
+TASK [run multiple commands on remote nodes] **********************************************************
+ok: [CSR1kv]
+
+TASK [run commands that require answering a prompt] ***************************************************
+ok: [CSR1kv]
+
+PLAY RECAP ********************************************************************************************
+CSR1kv                     : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+devasc@labvm:~/labs/devnet-src/Devasc_Skills$ ^C
+devasc@labvm:~/labs/devnet-src/Devasc_Skills$

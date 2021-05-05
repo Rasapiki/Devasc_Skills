@@ -1,0 +1,18 @@
+2021-05-03
+
+STARTING IOS CHECK 
+Bash.sh
+check_ios.rep
+ios_config
+hostname CSR101
+16.9.101
+Upgrade ios version to: 16.9b
+
+Bash.sh
+check_ios.rep
+ios_config
+hostname CSR111
+16.9.111
+Upgrade ios version to: 16.9b
+
+ENDING IOS CHECK
