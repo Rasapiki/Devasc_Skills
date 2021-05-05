@@ -16,8 +16,8 @@ echo "CMD python3 /home/myapp/Jenkins.py" >> test/Dockerfile
 
 cd test
 
-docker build -t Jenkins .
+docker build -t JenkinsR .
 
-docker run -t -d -p 5050:5050 --name Rasa Jenkins
+docker run -t -d -p 5050:5050 --name Rasa JenkinsR
 
 docker ps -a
