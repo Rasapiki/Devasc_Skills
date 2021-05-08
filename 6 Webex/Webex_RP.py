@@ -1,7 +1,7 @@
 import requests
 
 #I am creating room and writting token 
-access_token = '255252525252522525255'
+access_token = 'N2VlYWM0OWYtZmU1Zi00N2Q2LWI3MDctZDAxYTk5Y2ExNDA5MmVjMTI2ZDYtMGQx_PF84_consumer'
 url = 'https://webexapis.com/v1/rooms'
 headers = {
     'Authorization': 'Bearer {}'.format(access_token),
@@ -18,7 +18,7 @@ param = {'roomId': room_id, 'personEmail': person_email}
 res = requests.post(url, headers=headers, json=param)
 
 #I am sending the message 
-message = 'Rasa Pikiene Skills Egzam: \n https://github.com/Rasapiki/Devasc_Skills_RP.git'
+message = 'Rasa Pikiene Skills Exam: \n https://github.com/Rasapiki/Devasc_Skills.git'
 url = 'https://webexapis.com/v1/messages'
 para = {'roomId': room_id, 'markdown': message}
 res = requests.post(url, headers=headers, json=para)
